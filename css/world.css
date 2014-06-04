@@ -1,0 +1,230 @@
+body {
+	font-family:arial;
+	font-size:12px;
+	background:black url('../images/globe-bg.jpg');
+	color:white;
+}
+
+#loading {
+	position: absolute;
+	top:0%;
+	left:50%;
+	width: 32px;
+	height:16px;
+	margin: 0 0 0 -16px;
+	border:1px solid red;
+	background: url('../images/load.gif');
+	display:none;
+	
+}
+
+#canvas {
+	position: absolute;
+	top:-100px;
+	width: 900px;
+	height: 700px;
+	left: 50%;
+	margin-left:-550px;	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;	
+
+}
+
+#attacklinelabel {
+	position:absolute;
+	text-align:center;
+	border: 1px solid lime;
+	border-radius:6px;
+	font-size:12px;
+	padding:4px;
+	background-color:rgba(5,5,5,0.8);
+	overflow:hidden;
+	z-index:1000;
+}
+.center {
+	width:100%;
+	text-align:center;
+	
+}
+#score {
+	position:absolute;
+	top:330px;
+	left:100%;
+	margin-left:-250px;
+	width:200px;
+	height:200px;
+	text-align:center;
+	border: 3px solid lime;
+	border-radius:6px;
+	font-size:12px;
+	background-color:rgba(5,5,5,0.8);
+}
+#dialog {
+	position:absolute;
+	top:30px;
+	left:100%;
+	margin-left:-250px;
+	width:200px;
+	height:250px;
+	text-align:center;
+	border: 3px solid lime;
+	border-radius:6px;
+	font-size:12px;
+	background-color:rgba(5,5,5,0.8);
+}
+#dialog .intellabel {
+
+}
+#dialog #command {
+		padding:10px;
+}
+#dialog #command>div {
+	display: none;
+	line-height:24px;
+	color:lime;
+}
+#slider {
+	margin:10px;
+}
+.intellabel {
+	font-size:10px;
+	color:lime;
+	padding:6px;
+	border-bottom:1px solid lime;
+}			
+#intel {
+	position:absolute;
+	top:30px;
+	left: 10px;
+	width:200px;
+	height:80%;
+	text-align:center;
+	border: 3px solid lime;
+	border-radius:6px;
+	font-size:16px;
+	background-color:rgba(5,5,5,0.8);
+	overflow:hidden;
+}
+
+
+#feedback {
+	font-family:Arial;
+	font-size:14px;				
+	color:lime;				
+	padding:6px;
+	overflow-y:scroll;
+	width:190px;
+	height:90%;
+}
+#feedback:hover {
+	
+}
+#feedback>div:first-child {			
+	color:white!important;
+}
+.feedback_item {
+	border: 1px solid green;
+	border-radius: 4px;
+	padding:4px;
+	margin:4px;
+}
+
+#paper {
+	
+		
+}
+#nsw, #vic, #wa, #sa, #nt, #qld, #tas {
+	display: none;
+	height: 400px;
+	overflow: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 300px;
+}
+h2 {
+	text-align: center;
+}
+.army_bubble {
+	border-radius:50%;
+	border: 1px solid gold;
+	background-color: navy;
+	color:#fff;
+	font-size:11px;
+	padding:3px;
+	width:20px;
+	text-align:center;	
+}
+#invade {
+	display: none;
+	position:relative;				
+}
+#notyourturn {
+	display: none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+
+#whosturn, #countryinfo {
+	position:absolute;
+	background-color:rgba(5,5,5,0.8);
+	top:90%;	
+	left: 50%;
+	font-size:12px;	
+	color:silver;	
+	text-align:center;
+	border: 1px solid lime;
+	border-radius:6px;
+	padding:4px;
+}
+
+#whosturn {
+	margin-left:-150px;				
+	width:300px;	
+}
+
+#countryinfo {
+	margin-left:-300px;
+	margin-top:24px;
+	width:600px;
+}
+#winner {
+	position:absolute;
+	top:100px;
+	left:50%;
+	margin-left:-290px;
+	display:none;
+	width:576px;
+	height:385px;
+	border: 3px solid lime;
+	border-radius:6px;
+	background-color:rgba(5,5,5,0.8);	
+	text-align:center;
+}
+#winner>div:first-child {
+	font-size:18px;
+	color:lime;
+	padding:6px;
+	border-bottom:1px solid lime;
+}
+#winner>div:last-child {
+	border:1px solid lime;
+	height:345px;
+	background: url('../images/berlinwall.jpg');
+	padding:6px;
+	line-height:30px;
+}
+#winner>div:last-child>span {
+	padding:6px;
+	border: 1px solid lime;
+	border-radius:6px;
+	background-color:rgba(5,5,5,0.5);
+	font-size:20px;
+}
